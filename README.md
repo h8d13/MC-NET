@@ -27,7 +27,7 @@ Click "Open to LAN" > Make sure to check the port (I just type 12345).
 
 Copy the JS file (basic NN impelmentation to chop wood)
 
-And make sure to update the constants with you username and desired follow distance. 
+And make sure to update the constants with you username, follow distance, and port. 
 
 Run: ```node choppy.js``` 
 
