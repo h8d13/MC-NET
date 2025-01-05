@@ -51,7 +51,10 @@ const bot = mineflayer.createBot({
 // Load plugins
 bot.loadPlugin(pathfinder)
 
-const nn = new NeuralNetwork(11, 16, 6) // Added one more input for buddy distance
+const nn = new NeuralNetwork(10, 16, 6) // If you make changes to state you need to reflect it in the INPUT (X, 16, 6) 
+// If you make changes to actions you need to change the OUTPUT (X, 16, 6) 
+
+// If you want to make changes to NN structure, it will be more complex but you can (10, X, 6) Then modify the functions above ^^^
 
 function getState() {
     if (!bot.entity) return Array(11).fill(0)
@@ -76,7 +79,6 @@ function getState() {
         nearestBlock ? Math.min(1, Math.max(0, 1 - (bot.entity.position.distanceTo(nearestBlock.position) / 16))) : 0,
         bot.inventory.items().length / 36,
         typeof bot.time.timeOfDay === 'number' ? (bot.time.timeOfDay % 24000) / 24000 : 0,
-        typeof bot.game.difficulty === 'number' ? bot.game.difficulty / 3 : 1,
         typeof bot.experience.level === 'number' ? bot.experience.level / 30 : 0,
         buddyDistance // Added buddy distance to state
     ]
@@ -138,6 +140,7 @@ async function takeAction(outputs) {
             right: outputs[3] > threshold,
             jump: outputs[4] > threshold,
             sneak: outputs[5] > threshold
+            // Could add sprint for example
         }
 
         Object.entries(controls).forEach(([action, state]) => {
@@ -147,12 +150,13 @@ async function takeAction(outputs) {
                 console.log(`Control error (${action}):`, err.message)
             }
         })
-
+        // Action selection
+        // Rando look around xD
         if (Math.random() < 0.1) {
             bot.look(Math.random() * Math.PI * 2, Math.random() * Math.PI - Math.PI/2)
         }
     }
-
+    // Actually do tasks
     if (Math.random() < 0.1) {
         await survivalTasks()
     }
@@ -205,9 +209,10 @@ bot.once('spawn', () => {
         } catch (err) {
             console.log('Main loop error:', err.message)
         }
-    }, 500)
+    }, 500) // Here you can change the interval, ideally this would kind of dynamic and reflected in state ;)
 })
 
+// Helper rewards functions
 bot.on('entityHurt', (entity) => {
     if (entity === bot.entity) {
         console.log('Bot took damage!')
