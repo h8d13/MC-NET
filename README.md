@@ -41,6 +41,8 @@ Challenges for you:
 3. Make it craft or at least use tools
 4. Mining!
 
+Happy gaming with your new AI friend!
+
 ----
 
 Check out the official mineflayer docs:
