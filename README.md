@@ -37,11 +37,31 @@ Run: ```node choppy.js```
 Challenges for you:
 
 1. Make the bot eat the apples from trees so it can survive.
-2. Add shelter & combat mechanics
-3. Make it craft or at least use tools
-4. Mining!
+2. Change the reward mechanism to be more "survival" perhaps add decay?
+3. Add shelter & combat mechanics
+4. Make it craft or at least use tools
+5. Mining!
 
 Happy gaming with your new AI friend!
+
+I created this guide because I saw a lot of videos of "CHATGPT PLAYS MINECRAFT" but under the hood is just interfacing through trial and error using commands instead of an actual state representation.
+
+```  
+State: [
+  1, # Health
+  1, # Food
+  13.4, # Oxygen
+  0.7, # Height
+  0.6153203844230036, # Distance to "logs" large 32 
+  0.9558058261758408, # Distance to "logs" short 3
+  0.08333333333333333, # Inventory
+  0.39829166666666665, # Time
+  0, # Exp
+  0.4213428747823542 # Buddy system
+]
+``` 
+
+
 
 ----
 
