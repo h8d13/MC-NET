@@ -5,12 +5,14 @@
 2. In your working directory: ```npm install mineflayer mineflayer-pathfinder vec3``` This will create package.json and package-lock.json files.
 
 3. Downgrade your minecraft version to a mineflayer compatible version (I used 1.21.1 which is stable I believe).
-
+3.1. Settings page:
 ![Screenshot from 2025-01-05 14-01-09](https://github.com/user-attachments/assets/82a708dd-34ec-49fa-addc-7f1754653fed)
+3.2. Press new install > Find 1.21.1 
 ![Screenshot from 2025-01-05 14-02-14](https://github.com/user-attachments/assets/e4b1c9d2-5919-4084-b2fe-472eacecae6c)
+3.3. Go back to PLAY page and select your new install. 
 ![Screenshot from 2025-01-05 14-03-03](https://github.com/user-attachments/assets/5ac8180f-e576-486b-90f8-db108742a2c9)
 
-4. Good to go!
+5. Good to go!
 
 ---
 
