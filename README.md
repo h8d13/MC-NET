@@ -6,11 +6,11 @@
 
 3. Downgrade to a mineflayer compatible version (I used 1.21.1 which is stable I believe).
 
-3.1. Settings page:
+3.1. Settings page (tick the last thing there):
 
 ![Screenshot from 2025-01-05 14-01-09](https://github.com/user-attachments/assets/82a708dd-34ec-49fa-addc-7f1754653fed)
 
-3.2. Press new install > Find 1.21.1 
+3.2. Now you can press new install > Find 1.21.1 
 
 ![Screenshot from 2025-01-05 14-02-14](https://github.com/user-attachments/assets/e4b1c9d2-5919-4084-b2fe-472eacecae6c)
 
