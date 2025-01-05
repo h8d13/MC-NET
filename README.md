@@ -23,6 +23,7 @@
 ---
 
 Go to a singleplayer world with commands. 
+Open the "escape" menu. 
 Click "Open to LAN" > Make sure to check the port (I just type 12345). 
 
 Copy the JS file (basic NN impelmentation to chop wood)
