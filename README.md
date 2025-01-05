@@ -41,6 +41,8 @@ Challenges for you:
 3. Add shelter & combat mechanics
 4. Make it craft or at least use tools
 5. Mining!
+6. Create a memory system
+7. Change the NN architectures
 
 Happy gaming with your new AI friend!
 
@@ -60,8 +62,6 @@ State: [
   0.4213428747823542 # Buddy system
 ]
 ``` 
-
-
 
 ----
 
