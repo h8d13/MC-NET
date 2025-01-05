@@ -2,7 +2,7 @@
 
 1. Make sure you have node.js installed ```node --version``` (and do the same for npm, npx)
 
-In your working directory: ```npm install mineflayer mineflayer-pathfinder vec3``` This will create package.json and package-lock.json files.
+2. In your working directory: ```npm install mineflayer mineflayer-pathfinder vec3``` This will create package.json and package-lock.json files.
 
 3. Downgrade your minecraft version to a mineflayer compatible version (I used 1.21.1 which is stable I believe).
 
@@ -10,7 +10,7 @@ In your working directory: ```npm install mineflayer mineflayer-pathfinder vec3`
 ![Screenshot from 2025-01-05 14-02-14](https://github.com/user-attachments/assets/e4b1c9d2-5919-4084-b2fe-472eacecae6c)
 ![Screenshot from 2025-01-05 14-03-03](https://github.com/user-attachments/assets/5ac8180f-e576-486b-90f8-db108742a2c9)
 
-3. Good to go!
+4. Good to go!
 
 ---
 
