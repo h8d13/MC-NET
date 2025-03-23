@@ -4,7 +4,7 @@
 
 2. In your working directory: ```npm install mineflayer mineflayer-pathfinder vec3``` This will create package.json and package-lock.json files.
 
-3. Downgrade to a mineflayer compatible version (I used 1.21.1 which is stable I believe).
+3. Downgrade to a mineflayer compatible version (I used 1.21.1 which is stable I believe 17/09/2024).
 
 3.1. Settings page (tick the last thing there):
 
